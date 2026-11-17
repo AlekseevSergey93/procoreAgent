@@ -1,0 +1,33 @@
+{
+  "upcomingDays": 14,
+  "schedule": {
+    "criticalWindowDays": 7,
+    "lowProgressPercent": 50
+  },
+  "rfi": {
+    "maxOpenDays": 14,
+    "highAfterOverdueDays": 7
+  },
+  "submittal": {
+    "requiredOnSiteWindowDays": 14
+  },
+  "punch": {
+    "significantOverdueCount": 10
+  },
+  "budget": {
+    "overrunPercent": 5,
+    "pendingChangeOrdersPercent": 3,
+    "columns": {}
+  },
+  "dailyLog": {
+    "maxSilentWorkdays": 2,
+    "lookbackDays": 14
+  },
+  "team": {
+    "overloadOverdueItems": 5
+  },
+  "health": {
+    "redHighRisks": 2,
+    "yellowMediumRisks": 3
+  }
+}

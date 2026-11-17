@@ -1,0 +1,31 @@
+{
+  "name": "procore-mcp",
+  "version": "0.1.0",
+  "description": "Read-only MCP server exposing Procore project insights (deadlines, team, risks, budget) for a CEO assistant in OpenClaw",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "procore-mcp": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsc -p tsconfig.json --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "probe": "node dist/cli/probe.js",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

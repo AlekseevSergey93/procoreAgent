@@ -1,0 +1,18 @@
+### Node ###
+node_modules/
+dist/
+*.tsbuildinfo
+
+### Secrets and local data ###
+.env
+fixtures/
+
+### IntelliJ IDEA ###
+out/
+.kotlin
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
